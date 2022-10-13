@@ -1,5 +1,6 @@
 To start collecting Linux system logs enable logging then:
-	sudo usermod -a -G systemd-journal dd-agent
+	**sudo usermod -a -G systemd-journal dd-agent**
+	- To test this command: echo 'hello journald' | systemd -cat -p info
 
 Also needed to add a conf.yaml in the /etc/datadog-agent/conf.d/journal.d folder.
 

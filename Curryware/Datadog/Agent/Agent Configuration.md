@@ -1,0 +1,1 @@
+Interesting trick that should allow editing with VS Code.  Create a symbolic link.  Doesn't seem to be working

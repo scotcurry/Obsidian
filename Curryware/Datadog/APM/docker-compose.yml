@@ -1,0 +1,23 @@
+services:
+  agent:
+    image: "datadog/agent:7.31.1"
+    environment:
+      - DD_API_KEY=a5c96ad24ba665fee2a9a928e41e178b
+# add agent env variables
+      - DD_APM_ENABLED=true
+      - DD_LOGS_ENABLED=true
+      - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
+      - DD_DOCKER_LABELS_AS_TAGS={"my.custom.label.team":"team"}
+      - DD_TAGS='env:intro-apm'
+      - DD_APM_NON_LOCAL_TRAFFIC=true
+      - DD_HOSTNAME=agent
+# add agent trace port
+    ports:
+      - 127.0.0.1:8126:8126/tcp
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /proc/:/host/proc/:ro
+      - /sys/fs/cgroup/:/host/sys/fs/cgroup:ro
+# add agent log labels
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "datadog-agent", "service": "agent"}]'
