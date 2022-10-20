@@ -2,7 +2,7 @@ services:
   agent:
     image: "datadog/agent:7.31.1"
     environment:
-      - DD_API_KEY=a5c96ad24ba665fee2a9a928e41e178b
+      - DD_API_KEY=<Datadog Key>
 # add agent env variables
       - DD_APM_ENABLED=true
       - DD_LOGS_ENABLED=true

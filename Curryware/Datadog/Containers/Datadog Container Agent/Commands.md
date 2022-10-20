@@ -1,4 +1,4 @@
-Pull the Datadog agent container
+	Pull the Datadog agent container
 	sudo docker pull datadog/agent
 
 Command to execute datadog agent
