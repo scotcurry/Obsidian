@@ -1,0 +1,1 @@
+To run any application you need to have something to run it on.  For the most complete environment, we will set up a K8s cluster.  That cluster runs on a HOST.  Datadog will get information from the HOST, the CLUSTER, and the PODS in the CLUSTER.

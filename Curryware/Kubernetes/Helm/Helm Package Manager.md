@@ -1,0 +1,3 @@
+A Helm Chart is a packaged Kubernetes deployment.  Datadog (the company) has created a Helm chart that correctly deploys the agent.  
+
+The Datadog Helm chart is completely seperate from the application that the customer is building.  They may at some point put their application in a Helm chart, but it should be considered just a package manager for Kubernetes like apt, yum and homebrew are package managers for OS's.

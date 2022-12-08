@@ -1,0 +1,1 @@
+sudo DD_HOSTNAME=curryware1  DD_HOST_TAGS=aws:lab1,aws:currywareff,team:detroit,singlelabel DD_ENV=curryware_env DD_COLLECT_EC2_TAGS=true DD_LOGS_ENABLED=true DD_API_KEY=<DD_API_KEY> DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
