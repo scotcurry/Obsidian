@@ -1,1 +1,0 @@
-This is how you actually expose an application running in a set of pods to the world outside of the cluster.
